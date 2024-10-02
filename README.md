@@ -1,4 +1,4 @@
-# :wave: Say hi to Elizabeth :wave:
+# :wave: Say hi to Corra :wave:
 
 [![Generic badge](https://img.shields.io/badge/course%20available%3F-yes-green.svg)](https://shields.io/)
 
@@ -30,7 +30,7 @@ Status | Lectures
 
 To use this repository for making Shopify themes, use the following command of Shopify CLI.
 ```sh
-shopify theme init [ NAME OF YOUR THEME ] --clone-url https://github.com/polidario/Elizabeth_Clean
+shopify theme init [ NAME OF YOUR THEME ] --clone-url  https://github.com/vaibhavp13/Corra_Repository_For_Shopify.git
 ```
 
 If you don't have Shopify CLI installed to your computer, navigate to the [installation page of Shopify CLI](https://shopify.dev/themes/tools/cli/installation).
