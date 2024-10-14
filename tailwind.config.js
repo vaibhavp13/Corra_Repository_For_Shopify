@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     './layout/*.liquid',
+    './**/*.liquid',
     './sections/*.liquid',
     './snippets/*.liquid',
     './templates/customers/*.liquid',
