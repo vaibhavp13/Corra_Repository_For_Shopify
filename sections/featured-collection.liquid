@@ -7,7 +7,7 @@
         {% render 'product-card', product: product %}
       {% else %}
         {% for item in (1..4) %}
-          {% render 'snippet' %}
+          {% render 'product-card-placeholder' %}
         {% endfor %}
       {% endfor %}
     </div>
@@ -39,6 +39,7 @@
         "label": "Number of products to show"
         
       }
-    ]
+    ],
+    "presets": []
   }
 {% endschema %}
