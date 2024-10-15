@@ -5,7 +5,9 @@
         <a href="{{ collection.url }}">
           <div class="h-80 overflow-hidden">
             {% if collection.featured_image != blank %}
-              {% assign collection_image = col %}
+              {% assign collection_image = collection.featured_image %}
+            {% else %}
+              {% assign variable = value %}
             {% endif %}
           </div>
         </a>
