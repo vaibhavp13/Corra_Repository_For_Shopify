@@ -12,19 +12,9 @@
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured Collection",
-        "featured_collection": "all",
-        "number_of_product_to_show": 4
-      }
-    },
-    "contact_form_JNDAcR": {
-      "type": "contact-form",
-      "settings": {
+        "featured_collection": "all"
       }
     }
   },
-  "order": [
-    "featured-collection",
-    "contact_form_JNDAcR"
-  ]
+  "order": ["featured-collection"]
 }

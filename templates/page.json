@@ -13,15 +13,9 @@
       "type": "template-page",
       "settings": {
       }
-    },
-    "contact_form_baczY8": {
-      "type": "contact-form",
-      "settings": {
-      }
     }
   },
   "order": [
-    "template",
-    "contact_form_baczY8"
+    "template"
   ]
 }
