@@ -5,7 +5,10 @@
     <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
       {% for product in section.settings.featured_collection.products  limit:  section.settings.number_of_product_to_show%}
         {% render 'product-card', product: product %}
-      
+      {% else %}
+        {% for item in collection %}
+          
+        {% endfor %}
       {% endfor %}
     </div>
   </div>
