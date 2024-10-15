@@ -12,8 +12,10 @@
     "template": {
       "type": "template-collection",
       "settings": {
-        
       }
     }
-  }, "order": ["template"]
+  },
+  "order": [
+    "template"
+  ]
 }
