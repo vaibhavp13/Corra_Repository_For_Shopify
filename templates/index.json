@@ -9,7 +9,13 @@
  */
 {
   "sections": {
-
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+      }
+    }
   },
-  "order": []
+  "order": [
+    "featured-collection"
+  ]
 }
