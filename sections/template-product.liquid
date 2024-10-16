@@ -68,7 +68,7 @@
                 <div class="my-2">
                   <select name="options[{{ option.name | escape }}]" id="Option-{{ section.id }}-{{ forloop.index0 }}" class="w-full">
                     {% for value in option.values %}
-                      <option value="{{ value }}"></option>
+                      <option value="{{ value |  escape }}">{{ value }}</option>
                     {% endfor %}
                   </select>
                 </div>
