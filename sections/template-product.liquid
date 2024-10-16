@@ -93,7 +93,7 @@
         </div>
         <div class="my-3">
           <button type="submit" name="add" class="w-full py-4 px-6 bg-gray-900 text-white hover:bg-gray-700 rounded-sm my-2">
-            {% if product.selected_or_first_available_variant %}
+            {% if product.selected_or_first_available_variant.available == false %}
               
             {% endif %}
           </button>
