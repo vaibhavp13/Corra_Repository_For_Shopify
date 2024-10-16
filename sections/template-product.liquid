@@ -60,9 +60,9 @@
           {% endif %}
         </div>
         <div class="my-3">
-          {% if product.has_only_default_variant %}
+          {% unless product.has_only_default_variant %}
             
-          {% endif %}
+          {% endunless %}
         </div>
       {% endform %}
     </div>
