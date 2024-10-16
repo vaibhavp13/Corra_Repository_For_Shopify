@@ -55,9 +55,9 @@
         </div>
 
         <div class="my-3">
-          <span class="text-base text-gray-500 line-through">{{ product_price.compare_at_price | money }}</span>
-          <span class="text-lg text-gray-900">{{ product_price.price |  money }}</span>
-          {% if product_price.price < product_price.compare_at_price %}
+          <span class="text-base text-gray-500 line-through">{{ selected_variant.compare_at_price | money }}</span>
+          <span class="text-lg text-gray-900">{{ selected_variant.price |  money }}</span>
+          {% if selected_variant.price < selected_variant.compare_at_price %}
             <span class="px-5 py-1 text-sm font-bold bg-red-500 rounded-full text-black mx-4">Sale</span>
           {% endif %}
         </div>
