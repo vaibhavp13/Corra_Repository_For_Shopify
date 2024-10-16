@@ -66,7 +66,11 @@
                 <label for="Option-{{ section.id }}-{{ forloop.index0 }}">{{ option.name }}</label>
 
                 <div class="my-2">
-                  <select name="options[{{ option.name | escape }}]" id="Option-{{ section.id }}-{{ forloop.index0 }}" class="w-full"></select>
+                  <select name="options[{{ option.name | escape }}]" id="Option-{{ section.id }}-{{ forloop.index0 }}" class="w-full">
+                    {% for item in collection %}
+                      
+                    {% endfor %}
+                  </select>
                 </div>
               {% endfor %}
             </div>
