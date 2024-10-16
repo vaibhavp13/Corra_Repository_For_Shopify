@@ -62,8 +62,8 @@
         <div class="my-3">
           {% unless product.has_only_default_variant %}
             <div data-url="{{ product.url }}" data-section="{{ section.id }}" >
-              {% for option in product %}
-                
+              {% for option in product.options_with_values %}
+                <label for="Option-{{}}"></label>
               {% endfor %}
             </div>
           {% endunless %}
