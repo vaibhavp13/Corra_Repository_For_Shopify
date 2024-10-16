@@ -66,11 +66,11 @@
                 <label for="Option-{{ section.id }}-{{ forloop.index0 }}">{{ option.name }}</label>
 
                 <div class="my-2">
-                  <select name="options[{{ option.name | escape }}]" id="Option-{{ section.id }}-{{ forloop.index0 }}" class="w-full border py-1 px-3">
+                  <select name="options[{{ option.name | escape }}]" id="Option-{{ section.id }}-{{ forloop.index0 }}" class="w-full border py-3 px-3">
                     {% for value in option.values %}
                       <option 
-                        {% if option.selected_value %}
-                          
+                        {% if option.selected_value == value %}
+                          selected="selected"
                         {% endif %}
                        value="{{ value |  escape }}">
                        {{ value }}
@@ -81,6 +81,18 @@
               {% endfor %}
             </div>
           {% endunless %}
+        </div>
+        <div class="my-3">
+          <label for="Quantity-{{ section.id }}">Quantity</label>
+          <div class="my-2">
+            <input type="number" name="quantity" id="Quantity-{{ section.id }}" value="1" min="1" class="w-full border px-3 py-3">
+          </div>
+        </div>
+        <div class="my-3">
+          <p class="text-gray-700">{{ product.description }}</p>
+        </div>
+        <div class="my-3">
+          <button type="submit" name="add" class="w-full py-4 px-6 bg-gray-900 text-white hover:bg-gray-700 rounded-sm my-2"></button>
         </div>
       {% endform %}
     </div>
