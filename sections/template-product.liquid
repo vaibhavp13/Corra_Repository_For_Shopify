@@ -69,7 +69,7 @@
                   <select name="options[{{ option.name | escape }}]" id="Option-{{ section.id }}-{{ forloop.index0 }}" class="w-full border py-1 px-3">
                     {% for value in option.values %}
                       <option 
-                        {% if condition %}
+                        {% if option.selected_value %}
                           
                         {% endif %}
                        value="{{ value |  escape }}">
