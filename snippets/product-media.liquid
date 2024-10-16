@@ -1,6 +1,6 @@
 {% case media.media_type %}
-  {% when condition %}
-    
+  {% when 'image' %}
+    <img class="w-full h-full object-cover" src="{{ media.url | img_url: 'large'}}" alt="{{ media.preview_image.alt }}">
   {% else %}
     
 {% endcase %}

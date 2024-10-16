@@ -12,20 +12,9 @@
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured Collection",
-        "featured_collection": "all",
-        "number_of_product_to_show": 4
-      }
-    },
-    "contact_form_MaHK4y": {
-      "type": "contact-form",
-      "settings": {
-        "title": "Contact Page"
+        "featured_collection": "all"
       }
     }
   },
-  "order": [
-    "featured-collection",
-    "contact_form_MaHK4y"
-  ]
+  "order": ["featured-collection"]
 }
