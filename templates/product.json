@@ -13,9 +13,16 @@
       "type": "template-product",
       "settings": {
       }
+    },
+    "contact_form_gJkjtM": {
+      "type": "contact-form",
+      "settings": {
+        "title": "Contact us"
+      }
     }
   },
   "order": [
-    "template"
+    "template",
+    "contact_form_gJkjtM"
   ]
 }
