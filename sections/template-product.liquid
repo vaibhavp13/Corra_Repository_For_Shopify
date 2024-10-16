@@ -1,4 +1,8 @@
-<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <div class="max-w-6xl mx-auto my-8">
@@ -23,6 +27,10 @@
               </div>
             {% endfor %}
           </div>
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
     </div>
@@ -30,3 +38,17 @@
     <div class="product--information"></div>
   </div>
 </div>
+
+
+<script>
+  const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    pagination: {
+      el: '.swiper-pagination'
+    },
+    navigation: {
+      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next'
+    }
+  })
+</script>
