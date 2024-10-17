@@ -49,14 +49,16 @@
         {% for block in section.blocks %}
           {% case block.type %}
             {% when 'vendor' %}
-              
+              <div class="my-3">
+                <span class="text-xs text-gray-500">{{ product.vendor }}</span>
+              </div>
+              {% when 'description' %}
+                
             {% else %}
               
           {% endcase %}
         {% endfor %}
-        <div class="my-3">
-          <span class="text-xs text-gray-500">{{ product.vendor }}</span>
-        </div>
+       
 
         <div class="my-3">
           <h1 class="text-3xl text-gray-900">{{ product.title }}</h1>
