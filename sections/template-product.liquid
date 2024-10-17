@@ -52,17 +52,18 @@
               <div class="my-3">
                 <span class="text-xs text-gray-500">{{ product.vendor }}</span>
               </div>
+            {% when 'title' %}
+              <div class="my-3">
+                <h1 class="text-3xl text-gray-900">{{ product.title }}</h1>
+              </div>
             {% when 'description' %}
-
             {% else %}
               
           {% endcase %}
         {% endfor %}
        
 
-        <div class="my-3">
-          <h1 class="text-3xl text-gray-900">{{ product.title }}</h1>
-        </div>
+      
 
         <div class="my-3">
           <span class="text-base text-gray-500 line-through">{{ selected_variant.compare_at_price | money }}</span>
