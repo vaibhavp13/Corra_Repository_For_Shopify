@@ -47,7 +47,12 @@
       {% form 'product', product %}
         <input type="hidden" name="id" value="{{ selected_variant.id }}">
         {% for block in section.blocks %}
-          
+          {% case block.type %}
+            {% when condition %}
+              
+            {% else %}
+              
+          {% endcase %}
         {% endfor %}
         <div class="my-3">
           <span class="text-xs text-gray-500">{{ product.vendor }}</span>
