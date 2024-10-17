@@ -46,6 +46,9 @@
     <div class="product--information sticky top-5 p-2">
       {% form 'product', product %}
         <input type="hidden" name="id" value="{{ selected_variant.id }}">
+        {% for block in collection %}
+          
+        {% endfor %}
         <div class="my-3">
           <span class="text-xs text-gray-500">{{ product.vendor }}</span>
         </div>
