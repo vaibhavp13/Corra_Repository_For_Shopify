@@ -65,7 +65,30 @@
                 {% endif %}
               </div>
             {% when 'variant_selector' %}
-              
+              <div class="my-3">
+                {% unless product.has_only_default_variant %}
+                  <div data-url="{{ product.url }}" data-section="{{ section.id }}" >
+                    {% for option in product.options_with_values %}
+                      <label for="Option-{{ section.id }}-{{ forloop.index0 }}">{{ option.name }}</label>
+      
+                      <div class="my-2">
+                        <select name="options[{{ option.name | escape }}]" id="Option-{{ section.id }}-{{ forloop.index0 }}" class="w-full border py-3 px-3">
+                          {% for value in option.values %}
+                            <option 
+                              {% if option.selected_value == value %}
+                                selected="selected"
+                              {% endif %}
+                             value="{{ value |  escape }}">
+                             {{ value }}
+                             </option>
+                          {% endfor %}
+                        </select>
+                      </div>
+                    {% endfor %}
+                  </div>
+                {% endunless %}
+              </div>
+            {% when 'description' %}
             {% else %}
               
           {% endcase %}
@@ -75,29 +98,7 @@
       
 
         
-        <div class="my-3">
-          {% unless product.has_only_default_variant %}
-            <div data-url="{{ product.url }}" data-section="{{ section.id }}" >
-              {% for option in product.options_with_values %}
-                <label for="Option-{{ section.id }}-{{ forloop.index0 }}">{{ option.name }}</label>
-
-                <div class="my-2">
-                  <select name="options[{{ option.name | escape }}]" id="Option-{{ section.id }}-{{ forloop.index0 }}" class="w-full border py-3 px-3">
-                    {% for value in option.values %}
-                      <option 
-                        {% if option.selected_value == value %}
-                          selected="selected"
-                        {% endif %}
-                       value="{{ value |  escape }}">
-                       {{ value }}
-                       </option>
-                    {% endfor %}
-                  </select>
-                </div>
-              {% endfor %}
-            </div>
-          {% endunless %}
-        </div>
+        
         <div class="my-3">
           <label for="Quantity-{{ section.id }}">Quantity</label>
           <div class="my-2">
