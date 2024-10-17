@@ -48,7 +48,7 @@
         <input type="hidden" name="id" value="{{ selected_variant.id }}">
         {% for block in section.blocks %}
           {% case block.type %}
-            {% when condition %}
+            {% when 'vendor' %}
               
             {% else %}
               
