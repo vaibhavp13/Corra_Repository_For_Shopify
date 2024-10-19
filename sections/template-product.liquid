@@ -207,7 +207,6 @@
           const id = `price-${this.dataset.section}`
           const html = new DOMParser().parseFromString(responseText, 'text/html')
 
-          console.log('html', html )
           const oldPrice = document.getElementById(id)
           const newPrice = html.getElementById(id)
 
