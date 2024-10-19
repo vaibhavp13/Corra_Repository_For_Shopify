@@ -9,17 +9,17 @@
     </div>
     {% if search.performed %}
       {% if search.results.size > 0 %}
-        
+        {% for item in search.results %}
+          {% case item.object_type %}
+            {% when 'product' %}
+              {% render 'product-card', product: item %}
+            {% else %}
+              
+          {% endcase %}
+        {% endfor %}
       {% endif %}
     {% endif %}
-    {% for item in search.results %}
-      {% case item.object_type %}
-        {% when 'product' %}
-          {% render 'product-card', product: item %}
-        {% else %}
-          
-      {% endcase %}
-    {% endfor %}
+    
     {% render 'pagination', pagination: paginate %}
   {% endpaginate %}
 </div>
