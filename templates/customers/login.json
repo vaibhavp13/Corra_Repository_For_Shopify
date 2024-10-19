@@ -10,7 +10,7 @@
 {
   "sections": {
     "template": {
-      "type": "template-login",
+      "type": "template-customer-login",
       "settings": {
       }
     }
