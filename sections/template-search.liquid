@@ -8,7 +8,9 @@
       </form>
     </div>
     {% if search.performed %}
-      
+      {% if search.results.le %}
+        
+      {% endif %}
     {% endif %}
     {% for item in search.results %}
       {% case item.object_type %}
