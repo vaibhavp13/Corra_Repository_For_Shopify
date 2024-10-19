@@ -1,6 +1,6 @@
 {% assign main_menu_linklist = linklists[section.settings.menu].links %}
 {% comment %} {{ shop.customer_accounts_enabled }} {% endcomment %}
-<div class="relative bg-white txt-xl" x-data="{ mobileMenuOpen: true }">
+<div class="relative bg-white txt-xl" x-data="{ mobileMenuOpen: true, searchBarOpen:  }">
   <div class="mx-auto px-4 sm:px-6">
     <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
       <!-- STORE NAME / STORE LOGO -->
@@ -57,7 +57,7 @@
           {% endif %}
         {% endfor %}
       </nav>
-        {% comment %} CART BUTTON / ACCOUNT LINK IF ENABLED {% endcomment %}
+      {% comment %} CART BUTTON / ACCOUNT LINK IF ENABLED {% endcomment %}
       <div class="hidden md:flex items-center justify-end md:flex-1 space-x-5">
         <button type="button" class="whitespace-nowrap text-base text-gray-500 hover:text-gray-900"> {% render 'icon-search' %}</button>
         <a href="{{ routes.cart_url }}" class="whitespace-nowrap text-base text-gray-500 hover:text-gray-900">
