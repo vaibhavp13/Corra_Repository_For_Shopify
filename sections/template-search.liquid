@@ -4,7 +4,7 @@
     <div class="flext justify-center items-center">
       <form action="{{ routes.search_url }}" method="get">
         <input type="search" name="q" placeholder="Search" value="{{ search.terms |  escape }}">
-        <button type="submit" class="bg-gray-400 hover:bg-gra"></button>
+        <button type="submit" class="bg-gray-400 hover:bg-gray-700 "></button>
       </form>
     </div>
     {% for item in search.results %}
