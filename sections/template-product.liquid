@@ -189,7 +189,7 @@
 
       updateURL() {
         if(!this.currentVariant) return;
-        window.history.replaceState({}, '', `${this.dataset.url}?varia`)
+        window.history.replaceState({}, '', `${this.dataset.url}?variant=${this.}`)
       }
 
     }
