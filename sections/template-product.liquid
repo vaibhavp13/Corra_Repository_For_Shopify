@@ -208,7 +208,9 @@
           const html = new DOMParser().parseFromString(responseText, 'text/text/html')
 
           const oldPrice = document.getElementById(id)
-          const newPrice = html.ge
+          const newPrice = html.getElementById(id)
+
+          if(oldPrice && newPrice)
         })
       }
 
