@@ -1,6 +1,6 @@
 {% paginate search.results by 10 %}
   {% for item in search.results %}
-    {% case item.type %}
+    {% case item.object_type %}
       {% when condition %}
         
       {% else %}
