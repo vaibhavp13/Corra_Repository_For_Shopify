@@ -9,7 +9,9 @@
     </div>
     {% if search.performed %}
       {% if search.results.size > 0 %}
-        div.max-w-
+        <div class="max-w-6xl mx-auto">
+          
+        </div>
         {% for item in search.results %}
           {% case item.object_type %}
             {% when 'product' %}
