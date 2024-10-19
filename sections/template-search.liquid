@@ -1,5 +1,5 @@
 <div class="container mx-auto">
-  {% paginate search.results by 1 %}
+  {% paginate search.results by 10 %}
     <h1 class="text-xl my-4 text-center">Search Results</h1>
     <div class="flext justify-center items-center">
       <form action="{{ routes.search_url }}" method="get" class="border flex rounded">
