@@ -10,7 +10,7 @@
     {% if search.performed %}
       {% if search.results.size > 0 %}
         <div class="max-w-6xl mx-auto">
-          <p class="text-gray-500 text-center my-10">{{ search.results.size }}</p>
+          <p class="text-gray-500 text-center my-10">{{ search.results.size }} results the search terms</p>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             {% for item in search.results %}
               {% case item.object_type %}
