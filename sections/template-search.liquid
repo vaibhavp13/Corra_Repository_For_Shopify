@@ -7,6 +7,9 @@
         <button type="submit" class="bg-gray-400 hover:bg-gray-700 text-white border px-4">Search</button>
       </form>
     </div>
+    {% if search.performed %}
+      
+    {% endif %}
     {% for item in search.results %}
       {% case item.object_type %}
         {% when 'product' %}
