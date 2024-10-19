@@ -1,6 +1,6 @@
 <div class="container mx-auto">
   {% paginate search.results by 1 %}
-    <h1 class="text-xl my-4 text-center">{{}}</h1>
+    <h1 class="text-xl my-4 text-center">Search result</h1>
     {% for item in search.results %}
       {% case item.object_type %}
         {% when 'product' %}
