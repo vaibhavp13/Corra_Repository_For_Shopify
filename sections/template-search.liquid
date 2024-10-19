@@ -2,7 +2,7 @@
   {% paginate search.results by 1 %}
     <h1 class="text-xl my-4 text-center">Search Results</h1>
     <div class="flext justify-center items-center">
-      <form action="" method="get"></form>
+      <form action="{{ routes.pr }}" method="get"></form>
     </div>
     {% for item in search.results %}
       {% case item.object_type %}
