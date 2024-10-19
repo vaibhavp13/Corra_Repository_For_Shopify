@@ -59,7 +59,7 @@
 
     <div class="product--information sticky top-5 p-2">
       {% form 'product'
-        , product %}
+        , product, id: 'product-form' %}
         <input
           type="hidden"
           name="id"
@@ -167,7 +167,7 @@
         this.getSelectedOptions()
         this.getSelectedVariant()
         if(this.currentVariant){
-          thsi
+          this.updateURL()
         }
       }
 
