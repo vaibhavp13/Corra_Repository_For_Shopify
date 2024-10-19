@@ -3,7 +3,7 @@
     <h1 class="text-xl my-4 text-center">Search Results</h1>
     <div class="flext justify-center items-center">
       <form action="{{ routes.search_url }}" method="get">
-        <input class="px-4" type="search" name="q" placeholder="Search" value="{{ search.terms |  escape }}">
+        <input class="px-4 py-2 w-80" type="search" name="q" placeholder="Search" value="{{ search.terms |  escape }}">
         <button type="submit" class="bg-gray-400 hover:bg-gray-700 text-white border px-4">Search</button>
       </form>
     </div>
