@@ -179,7 +179,7 @@
       }
 
       getSelectedVariant() {
-        console.lg('this.getVariantJSON():', this.getVariantJSON())
+        console.log('this.getVariantJSON():', this.getVariantJSON())
         this.currentVariant = this.getVariantJSON().find((variant)=>{
           const findings = !variant.options.map((option, index)=> this.options[index] === option).includes(false)
           if(findings) return variant
