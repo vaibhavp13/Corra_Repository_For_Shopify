@@ -1,5 +1,10 @@
 {% paginate search.results by 10 %}
   {% for item in search.results %}
-    
+    {% case item.type %}
+      {% when condition %}
+        
+      {% else %}
+        
+    {% endcase %}
   {% endfor %}
 {% endpaginate %}
