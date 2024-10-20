@@ -2,6 +2,12 @@
   <div class="flex flex-col md:flex-row items-center justify-between my-5 gap-4">
     <h1 class="text-2xl font-bold text-gray-700">Addresses</h1>
     <button type="button" class="text-white font-weight-medium bg-gray-700 hover:bg-gray-900 px-6 py-2">Create new adress</button>
-    <a href="{{ routes.aco }}" class="text-blue-600 hover:text-blue-800 font-medium underline">Back to account</a>
+    <a href="{{ routes.account_url }}" class="text-blue-600 hover:text-blue-800 font-medium underline">Back to account</a>
   </div>
+
+  {% paginate collection.products by 12 %}
+    {% for product in collection.products %}
+      
+    {% endfor %}
+  {% endpaginate %}
 </div>
