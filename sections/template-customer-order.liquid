@@ -88,8 +88,8 @@
             <p> {{ credit_card_company }}</p>
             <p>{{ credit_card_last_four_digit }}</p>
 
-          {% case variable %}
-            {% when condition %}
+          {% case transaction.status_label %}
+            {% when 'Failure' %}
               
             {% else %}
               
