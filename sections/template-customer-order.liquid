@@ -88,7 +88,7 @@
             <p> {{ credit_card_company }}</p>
             <p>{{ credit_card_last_four_digit }}</p>
           {% else %}
-              <p class="text-sm mb-4">This order is </p>
+              <p class="text-sm mb-4">This order is manually placed {{ shop.name }}</p>
           {% endif %}
         </div>
       {% endfor %}
