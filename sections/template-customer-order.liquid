@@ -82,7 +82,8 @@
       {% for transaction in order.transactions %}
         <div class="mb-4">
           {% assign credit_card_company = transaction.payment_details.credit_card_company %}
-          {% assign credit_card_last_four_digit = value %}
+          {% assign credit_card_last_four_digit = transaction.payment_details.credit_card_number %}
+          
         </div>
       {% endfor %}
     </div>
