@@ -16,6 +16,8 @@
         <div class="w-full min-h-80 bg-gray-200 rounded overflow-hidden border">
           {% if line_item.image %}
             <img class="w-full min-h-80 object-cover object-center " src="{{ line_item.image | img_url: 'medium' }}" alt="{{ line_item.image.alt }}">
+          {% else %}
+            {{ 'product-1'  }}
           {% endif %}
         </div>
       </div>
