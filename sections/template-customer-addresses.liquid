@@ -6,7 +6,7 @@
   </div>
 
   {% paginate customer.addresses by 10 %}
-    div.grid
+    div.grid.grid-cols-1.md:grid
     {% for address in customer.addresses %}
       
     {% endfor %}
