@@ -5,8 +5,8 @@
     <a href="{{ routes.account_url }}" class="text-blue-600 hover:text-blue-800 font-medium underline">Back to account</a>
   </div>
 
-  {% paginate collection.products by 12 %}
-    {% for product in collection.products %}
+  {% paginate customer.addresses by 10 %}
+    {% for address in collection.products %}
       
     {% endfor %}
   {% endpaginate %}
