@@ -10,7 +10,9 @@
         <div>
           {% paginate customer.orders by 10 %}
             {% for order in customer.orders %}
-              
+              <div class="relative">
+                {{ order.name }}
+              </div>
             {% endfor %}
           {% endpaginate %}
         </div>
