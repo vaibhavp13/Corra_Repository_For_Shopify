@@ -86,7 +86,9 @@
 
           {% if credit_card_company %}
             <p> {{ credit_card_company }}</p>
-            <p>{{  }}</p>
+            <p>{{ credit_card_last_four_digit }}</p>
+          {% else %}
+              
           {% endif %}
         </div>
       {% endfor %}
