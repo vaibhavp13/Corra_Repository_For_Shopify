@@ -14,7 +14,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-12 p-4 md:p-12">
         <div class="w-full min-h80 bg-gray-200 rounded overflow-hidden">
           {% if line_item.image %}
-            <img src="" alt="">
+            <img src="{{ line_item.image | img_url  }}" alt="">
           {% endif %}
         </div>
       </div>
