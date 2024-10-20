@@ -90,7 +90,8 @@
 
           {% case transaction.status_label %}
             {% when 'Failure' %}
-              {% assign back = value %}
+              {% assign background = 'red' %}
+            {% when 'Failure' %}
             {% else %}
               
           {% endcase %}
