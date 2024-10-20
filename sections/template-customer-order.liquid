@@ -46,9 +46,9 @@
           <h1 class="font-medium mb-4">Delivery address</h1>
           <div class="text-gray-500 mb-4">
             <p>Address 1: {{ order.shipping_address.address1 }}</p>
-            <p>Address 2:</p>
-            <p>Street</p>
-            <p>Province</p>
+            <p>Address 2: {{ order.shipping_address.address2 }}</p>
+            <p>Street {{ order.shipping_address.street }}</p>
+            <p>Province {{ order.shipping_address.address1 }}</p>
             <p>City</p>
             <p>Zipcode</p>
             <p>country</p>
