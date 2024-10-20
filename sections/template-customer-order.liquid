@@ -45,7 +45,13 @@
         <div>
           <h1 class="font-medium mb-4">Delivery address</h1>
           <div class="text-gray-500 mb-4">
-            {{ order.shipping_address |  format_address }}
+            <p> {{ order.billing_address.name }}</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
           </div>
         </div>
       </div>
