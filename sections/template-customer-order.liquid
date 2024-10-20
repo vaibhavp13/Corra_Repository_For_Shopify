@@ -80,7 +80,9 @@
       <h1 class="font-medium mb-4">Payment information</h1>
 
       {% for transaction in order.transactions %}
-        <div class="mb-4"></div>
+        <div class="mb-4">
+          {% assign variable = value %}
+        </div>
       {% endfor %}
     </div>
     <div></div>
