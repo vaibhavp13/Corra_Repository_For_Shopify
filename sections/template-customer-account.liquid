@@ -7,7 +7,7 @@
       <div class="w-full my-6 md:my-12">
         <h2 class="text-xl font-bold text-gray-700">Order history</h2>
 
-        <div class="mt-6 grid-cols-1 gap-y-10 gap-x-6 sm:">
+        <div class="mt-6 grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:">
           {% paginate customer.orders by 10 %}
             {% for order in customer.orders %}
               <div class="relative">
