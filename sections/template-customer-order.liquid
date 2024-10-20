@@ -60,7 +60,7 @@
         <h1 class="text-lg font-medium mb-4">fulfillment</h1>
         {% if line_item.successfully_fulfilled_quantity > 0  %}
           <p class="mb-2">We have fulfilled {{ line_item.successfully_fulfilled_quantity }} items of your recent order.</p>
-          <p class="mb-2">Tracking company: {{ line_item.fulfillment_service }}</p>
+          <p class="mb-2">Tracking company: {{ line_item.fulfillment.tracking_company }}</p>
           <p class="mb-2"></p>
         {% else %}
           <p class="text-gray-500">The item is not yet fulfilled</p>
