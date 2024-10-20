@@ -7,7 +7,13 @@
       <div class="w-full my-6 md:my-12">
         <h2 class="text-xl font-bold text-gray-700">Order history</h2>
 
-        
+        <div>
+          {% paginate cus by 12 %}
+            {% for product in collection.products %}
+              
+            {% endfor %}
+          {% endpaginate %}
+        </div>
       </div>
     {% endif %}
   </div>
