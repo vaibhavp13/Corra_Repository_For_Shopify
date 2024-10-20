@@ -77,7 +77,11 @@
       {{ order.billing_address |  format_address }}
     </div>
     <div>
-      h1.font-medium.mb-4{Payment in}
+      <h1 class="font-medium mb-4">Payment information</h1>
+
+      {% for item in collection %}
+        
+      {% endfor %}
     </div>
     <div></div>
   </div>
