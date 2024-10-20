@@ -6,7 +6,7 @@
   </div>
 
   {% paginate customer.addresses by 10 %}
-    {% for address in collection.products %}
+    {% for address in customer.addresses %}
       
     {% endfor %}
   {% endpaginate %}
