@@ -85,7 +85,8 @@
           {% assign credit_card_last_four_digit = transaction.payment_details.credit_card_number %}
 
           {% if credit_card_company %}
-            
+            <p> {{ credit_card_company }}</p>
+            <p>{{  }}</p>
           {% endif %}
         </div>
       {% endfor %}
