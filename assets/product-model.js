@@ -7,9 +7,10 @@ class ProductModel extends HTMLElement {
   getMediaID(){
 
   }
-  
+
   openModelModal() {
     const mediaID = this.getMediaID()
+    const model
   }
 }
 
