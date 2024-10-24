@@ -2,6 +2,7 @@ class ProductModel extends HTMLElement {
   constructor() {
     super()
     this.openModelModal()
+    this.ad
   }
 
   loadContent(){
