@@ -11,7 +11,7 @@ class ProductModel extends HTMLElement {
         {
           name: 'modal-viewer-ui',
           version: '1.0',
-          onLoad: this.setupModelViewerUI
+          onLoad: this.setupModelViewerUI.bind(this)  
         }
       ]
     )
