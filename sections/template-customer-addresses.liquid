@@ -113,7 +113,7 @@
               <button 
                 class="w-full text-xs font-medium text-gray-700 border py-2"
                 data-delete-address
-                data-url="{{  }}"
+                data-url="{{ address.url }}"
                 >Delete</button>
             </div>
             <form action="{{ address.url }}" method="post">
@@ -233,6 +233,8 @@
 
       deleteButtons.forEach(button => {
         button.addEventListener("click", function(e){
+          var url = this.dataset.url
+          
           console.log("its working")
         })
       })
