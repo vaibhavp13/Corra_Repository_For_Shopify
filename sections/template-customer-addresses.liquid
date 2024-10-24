@@ -117,7 +117,7 @@
                 >Delete</button>
             </div>
             <form action="{{ address.url }}" method="post">
-
+              
             </form>
           </div>
 
@@ -234,7 +234,7 @@
       deleteButtons.forEach(button => {
         button.addEventListener("click", function(e){
           var url = this.dataset.url
-          document.querySelector(`form[action=""]`)
+          document.querySelector(`form[action="${url}"]`)
           console.log("its working")
         })
       })
