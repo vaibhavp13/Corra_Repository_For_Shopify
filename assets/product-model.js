@@ -19,7 +19,7 @@ class ProductModel extends HTMLElement {
     const modal = this.getModal()
     if(!mediaID) return
 
-    const productModelButton
+    const productModalButton
   }
 }
 
