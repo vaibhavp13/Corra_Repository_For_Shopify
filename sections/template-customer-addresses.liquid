@@ -131,7 +131,9 @@
         var provinces = selectedCountry.dataset.provinces
         var arrayOfProvinces = JSON.parse(provinces)
 
-        var provinceSelector = document.querySelector(`#address_province_${}`)
+        var provinceSelector = document.querySelector(`#address_province_${select.dataset.id}`)
+
+        console.log()
       })
     }
     getSelectedCountry(select) {
