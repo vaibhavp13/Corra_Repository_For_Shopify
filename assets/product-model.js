@@ -28,7 +28,7 @@ class ProductModel extends HTMLElement {
 
       const clone = template.content.cloneNode(true)
       
-      modal.querySelector("#body").appendChild
+      modal.querySelector("#body").appendChild(clone)
 
     })
 
