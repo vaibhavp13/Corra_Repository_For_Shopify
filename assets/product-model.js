@@ -10,7 +10,7 @@ class ProductModel extends HTMLElement {
   }
 
   getModal(){
-    const modal = document.getElementById
+    const modal = document.getElementById("productM")
   }
 
   openModelModal() {
