@@ -21,7 +21,7 @@ class ProductModel extends HTMLElement {
 
     const openModalButton = this.querySelector(`button[id="productModalOpenButton_${mediaID}"]`)
 
-    openModalButton.addEventListener()
+    openModalButton.addEventListener('click', function())
 
   }
 }
