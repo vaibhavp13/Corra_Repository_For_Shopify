@@ -235,8 +235,12 @@
         button.addEventListener("click", function(e){
           var url = this.dataset.url
 
-          var confirmation = window.confirm("Do you really wish to delete ")
-          document.querySelector(`form[action="${url}"]`).submit()
+          var confirmation = window.confirm("Do you really wish to delete this address?")
+
+          if(confirmation){
+            document.querySelector(`form[action="${url}"]`).submit()
+          }
+          
         })
       })
     }
