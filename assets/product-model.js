@@ -4,6 +4,6 @@ class ProductModel extends HTMLElement {
 
   }
   openModelModal() {
-    
+    console.log("")
   }
 }
