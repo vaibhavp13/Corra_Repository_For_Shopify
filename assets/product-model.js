@@ -4,7 +4,7 @@ class ProductModel extends HTMLElement {
     this.openModelModal()
   }
   openModelModal() {
-    console.log("the element")
+    const mediaID = this.
   }
 }
 
