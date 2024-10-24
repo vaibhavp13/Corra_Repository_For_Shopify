@@ -20,7 +20,7 @@ class ProductModel extends HTMLElement {
   setupModelViewerUI(errors){
     if(errors) return
 
-    this.modelViewerUI = new 
+    this.modelViewerUI = new Shopify.modelViewerUI
 
 
   }
