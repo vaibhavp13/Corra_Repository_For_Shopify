@@ -220,11 +220,12 @@
     constructor(){
       this.initCustomerAddress()
       this.customerAddressesSelector()
+      this.initDeleteAddressButton()
     }
     
     initDeleteAddressButton(){
       const deleteButtons = document.querySelectorAll("button[data-delete-address]")
-      
+      console.log(deleteButtons)
     }
     initCustomerAddress() {
       const allAddressSelector = document.querySelectorAll("select[data-country-selector]")
