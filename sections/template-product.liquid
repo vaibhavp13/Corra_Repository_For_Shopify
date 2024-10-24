@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
 
 {% assign selected_variant = product.selected_or_first_available_variant %}
 <style>
@@ -38,11 +38,11 @@
       </div>
 
       <div class="md:hidden">
-        <div class="swiper h-94">
+        <div class="swiper">
           <div class="swiper-wrapper">
             {% for media in product.media %}
-              <div class="swiper-slide">
-                <div class="h-80 overflow-hidden p-2">
+              <div class="swiper-slide ">
+                <div class="h-[100vw] overflow-hidden p-2">
                   {% render 'product-media'
                     , media: media %}
                 </div>
@@ -59,7 +59,9 @@
 
     <div class="product--information sticky top-5 p-2">
       {% form 'product'
-        , product, id: 'product-form', novalidate: 'novalidate' %}
+        , product
+        , id: 'product-form'
+        , novalidate: 'novalidate' %}
         <input
           type="hidden"
           name="id"
@@ -107,7 +109,7 @@
                       </div>
 
                       <script type="application/json">
-                      {{ product.variants | json }}
+                        {{ product.variants | json }}
                       </script>
                     {% endfor %}
                   </variant-selector>
@@ -219,24 +221,30 @@
   </script>
 
   <script>
-      const swiper = new Swiper('.swiper', {
-      // Optional parameters
-      direction: 'horizontal',
-      loop: true,
-      // If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
-      },
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      // And if we need scrollbar
-      scrollbar: {
-       el: '.swiper-scrollbar',
-      },
-    });
+    document.addEventListener('DOMContentLoaded', function(){
+      try{
+            const swiper = new Swiper('.swiper', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+                // If we need pagination
+                pagination: {
+                  el: '.swiper-pagination',
+                },
+                // Navigation arrows
+                navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                },
+                // And if we need scrollbar
+                scrollbar: {
+                el: '.swiper-scrollbar',
+                }
+            })
+      } catch(e){
+        console.log(e)
+      }
+    })
   </script>
 
   {% schema %}
