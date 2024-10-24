@@ -29,7 +29,7 @@ class ProductModel extends HTMLElement {
       const clone = template.content.cloneNode(true)
       
       modal.querySelector("#body").appendChild(clone)
-      modal.querySelector("")
+      modal.querySelector("#body > model-viewer").setAttribute("reveal", "auto")
 
     })
 
