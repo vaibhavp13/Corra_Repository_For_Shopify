@@ -18,6 +18,8 @@ class ProductModel extends HTMLElement {
   }
 
   setupModelViewerUI(errors){
+    if(errors){
+
 
   }
 
