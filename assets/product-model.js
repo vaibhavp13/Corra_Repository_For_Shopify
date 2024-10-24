@@ -8,4 +8,4 @@ class ProductModel extends HTMLElement {
   }
 }
 
-const productModel = new ProductModel()
+const productModel = customElements.
