@@ -3,7 +3,7 @@
 
 {% assign selected_variant = product.selected_or_first_available_variant %}
 
-<script src="{{ 'product-model.js' }}"></script>
+<script src="{{ 'product-model.js' | asset_url }}"></script>
 <style>
   .swiper-button-prev,
   .swiper-button-next {
