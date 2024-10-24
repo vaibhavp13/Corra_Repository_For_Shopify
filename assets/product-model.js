@@ -3,5 +3,7 @@ class ProductModel extends HTMLElement {
     super()
 
   }
-  openModelModal
+  openModelModal() {
+    
+  }
 }
