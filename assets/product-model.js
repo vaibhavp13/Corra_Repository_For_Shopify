@@ -3,8 +3,13 @@ class ProductModel extends HTMLElement {
     super()
     this.openModelModal()
   }
+
+  getMediaID(){
+
+  }
+  
   openModelModal() {
-    const mediaID = this.
+    const mediaID = this.getMediaID()
   }
 }
 
