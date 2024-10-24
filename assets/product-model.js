@@ -8,4 +8,4 @@ class ProductModel extends HTMLElement {
   }
 }
 
-const productModel = customElements.
+const productModel = customElements.define('product-model', ProductModel)
