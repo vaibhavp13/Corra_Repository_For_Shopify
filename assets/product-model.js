@@ -10,7 +10,8 @@ class ProductModel extends HTMLElement {
       [
         {
           name: 'modal-viewer-ui',
-          version: '1.0'
+          version: '1.0',
+          this.onload
         }
       ]
     )
