@@ -116,6 +116,10 @@
                 <h2 class="font-medium text-lg">Edit address</h2>
                 <butto x-on:click="address_{{ address.id }} = false " class="text-gray-500">{% render 'icon-close' %}</butto>
               </div>
+
+              {% form 'customer_address', product %}
+                
+              {% endform %}
             </div>
           </div>
         </div>
