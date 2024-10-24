@@ -118,6 +118,7 @@
   class CustomerAddress {
     constructor(){
       this.initCustomerAddress()
+      this.customerAddressSelector()
     }
     initCustomerAddress() {
       const allAddressSelector = document.querySelectorAll("select[data-country-selector]")
@@ -133,7 +134,23 @@
 
         var provinceSelector = document.querySelector(`#address_province_${select.dataset.id}`)
 
-        console.log(provinceSelector)
+        if(arrayOfProvinces.length < 1){
+          provinceSelector.setAttribute('disabled', 'disabled')
+        }else{
+          provinceSelector.removeAttribute('disabled')
+        }
+
+        provinceSelector.innerHTML = ""
+        var options = ''
+        for(var index = 0; index < arrayOfProvinces.length; index++){
+          options += `<option value="${arrayOfProvinces[index][0]}" selected>${arrayOfProvinces[index][0]}</option>`
+        } else {
+           options += `<option value="${arrayOfProvinces[index][0]}" >${arrayOfProvinces[index][0]}</option>`
+        }
+
+        provinceSelector.innerHTML = options
+
+
       })
     }
     getSelectedCountry(select) {
@@ -149,6 +166,18 @@
       }
 
       return selectedOption
+    }
+
+    customerAddressSelector() {
+      const addressesSelector = document.querySelectorAll("select[data-country-selector]")
+      if(addressesSelector.length < 1) return
+
+      addressesSelector.forEachs(select => {
+        select.addEventListener('change', function(e){
+          console.log("hello")
+        })
+      })
+
     }
   }
 
