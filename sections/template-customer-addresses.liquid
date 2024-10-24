@@ -15,7 +15,7 @@
       {% form 'customer_address', customer.new_address %}
         <div class="mb-4">
           <label for="address_fname_{{ form.id }}" class="uppercase text-gray-700 text-xs font-medium mb-2">First name</label>
-          <input type="text" name="address[first_name]" id="address_fname_{{ form.id }}" value="{{ form.first_name }}">
+          <input class="w-full text-gray-700 border " type="text" name="address[first_name]" id="address_fname_{{ form.id }}" value="{{ form.first_name }}">
         </div>
       {% endform %}
     </div>
