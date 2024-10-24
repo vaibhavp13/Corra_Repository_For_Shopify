@@ -1593,6 +1593,14 @@ video {
   outline-offset: 2px;
 }
 
+.focus\:outline:focus {
+  outline-style: solid;
+}
+
+.focus\:outline-2:focus {
+  outline-width: 2px;
+}
+
 @media (min-width: 640px) {
   .sm\:inline {
     display: inline;
