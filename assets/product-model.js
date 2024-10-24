@@ -1,1 +1,6 @@
-class ProductModel extends HTMLAnchorElement
+class ProductModel extends HTMLElement {
+  constructor() {
+    super()
+    
+  }
+}
