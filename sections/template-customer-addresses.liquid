@@ -180,7 +180,7 @@
 
           var arrayOfProvince = JSON.parse(provinces)
 
-          var provinceSelector = document.querySelector(`#address_province_${this.options[this.selectedIndex].dataset.id}`)
+          var provinceSelector = document.querySelector(`#address_province_${this.dataset.id}`)
 
           console.log(provinceSelector)
           if(arrayOfProvince.length < 1) {
