@@ -17,7 +17,9 @@ class ProductModel extends HTMLElement {
     )
   }
 
-  set
+  setupModelViewerUI(errors){
+
+  }
 
   getMediaID(){
     const id = this.getAttribute('data-media-id')
