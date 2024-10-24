@@ -234,8 +234,7 @@
       deleteButtons.forEach(button => {
         button.addEventListener("click", function(e){
           var url = this.dataset.url
-          document.querySelector(`form[action="${url}"]`)
-          console.log("its working")
+          document.querySelector(`form[action="${url}"]`).submit()
         })
       })
     }
