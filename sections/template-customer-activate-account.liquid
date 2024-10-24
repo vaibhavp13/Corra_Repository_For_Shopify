@@ -6,7 +6,7 @@
     </div>
 
     <div>
-      {% form 'activate_customer_password' %}
+      {% form 'activate_customer_password', class %}
         <div>
           <label for="password">Password</label>
           <input 
@@ -25,7 +25,7 @@
             class="relative block w-full px-3 py-2 border placeholder-gray-300 text-gray-700
            "
             autocomplete="new-password"
-            placeholder="New password"
+            placeholder="Confirm your password"
             type="passworf" 
             name="customer[password_confirmation]" 
             id="confirm_password">
