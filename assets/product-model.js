@@ -8,7 +8,8 @@ class ProductModel extends HTMLElement {
     Shopify.loadFeatures(
       [
         {
-          name: 'modal-viewer-ui'
+          name: 'modal-viewer-ui',
+          version: '1.0'
         }
       ]
     )
