@@ -175,7 +175,7 @@
       const addressesSelector = document.querySelectorAll("select[data-country-selector]")
       if(addressesSelector.length < 1) return
 
-      addressesSelector.forEachs(select => {
+      addressesSelector.forEach(select => {
         select.addEventListener('change', function(e){
           console.log("hello")
         })
