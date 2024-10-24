@@ -2,7 +2,7 @@ class ProductModel extends HTMLElement {
   constructor() {
     super()
     this.openModelModal()
-    this.ad
+    this.addEventListener('click', this.loadContent)
   }
 
   loadContent(){
