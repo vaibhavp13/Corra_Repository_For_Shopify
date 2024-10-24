@@ -4,6 +4,10 @@ class ProductModel extends HTMLElement {
     this.openModelModal()
   }
 
+  loadContent(){
+    Shopify.
+  }
+
   getMediaID(){
     const id = this.getAttribute('data-media-id')
     return id
