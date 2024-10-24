@@ -5,7 +5,7 @@ class ProductModel extends HTMLElement {
   }
 
   loadContent(){
-    Shopify.
+    Shopify.loadFeature
   }
 
   getMediaID(){
