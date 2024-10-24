@@ -5,7 +5,13 @@ class ProductModel extends HTMLElement {
   }
 
   loadContent(){
-    Shopify.loadFeature
+    Shopify.loadFeatures(
+      [
+        {
+          
+        }
+      ]
+    )
   }
 
   getMediaID(){
