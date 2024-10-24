@@ -2,7 +2,13 @@
   <div class="max-w-md w-full space-y-8   ">
     <div>
       <h1 class="mt-6 text-center text-3xl font-bold text-gray-700">Activate account</h1>
-      <p class="mt-4">Create your password to activate your account</p>
+      <p class="mt-4 text-center">Create your password to activate your account</p>
+    </div>
+
+    <div>
+      {% form 'activate_', product %}
+        
+      {% endform %}
     </div>
   </div>
 </div>
