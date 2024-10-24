@@ -128,7 +128,9 @@
         if(!selectedCountry) return
 
         var provinces = selectedCountry.dataset.provinces
-        var arrayOfProvinces = 
+        var arrayOfProvinces = JSON.parse(provinces)
+
+        
       })
     }
     getSelectedCountry(select) {
