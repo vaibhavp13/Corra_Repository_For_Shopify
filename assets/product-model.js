@@ -6,6 +6,7 @@ class ProductModel extends HTMLElement {
 
   getMediaID(){
     this.mediaID = this.getAttribute('data-media-id')
+    return
   }
 
   getModal(){
