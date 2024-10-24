@@ -221,6 +221,8 @@
       this.initCustomerAddress()
       this.customerAddressesSelector()
     }
+    
+    
     initCustomerAddress() {
       const allAddressSelector = document.querySelectorAll("select[data-country-selector]")
       if(allAddressSelector.length< 1) return
@@ -299,6 +301,7 @@
       })
 
     }
+
   }
 
   const customerAddress = new CustomerAddress()
