@@ -18,7 +18,9 @@ class ProductModel extends HTMLElement {
   }
 
   setupModelViewerUI(errors){
-    if(errors){
+    if(errors) return
+
+    this.mod
 
 
   }
