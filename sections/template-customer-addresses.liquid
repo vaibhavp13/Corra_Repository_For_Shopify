@@ -118,7 +118,7 @@
   class CustomerAddress {
     constructor(){
       this.initCustomerAddress()
-      this.customerAddressSelector()
+      this.customerAddressesSelector()
     }
     initCustomerAddress() {
       const allAddressSelector = document.querySelectorAll("select[data-country-selector]")
@@ -168,7 +168,7 @@
       return selectedOption
     }
 
-    customerAddressSelector() {
+    customerAddressesSelector() {
       const addressesSelector = document.querySelectorAll("select[data-country-selector]")
       if(addressesSelector.length < 1) return
 
