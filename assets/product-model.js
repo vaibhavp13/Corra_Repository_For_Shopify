@@ -7,3 +7,5 @@ class ProductModel extends HTMLElement {
     console.log("the element")
   }
 }
+
+const 
