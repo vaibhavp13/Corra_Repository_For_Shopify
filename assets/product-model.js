@@ -20,6 +20,8 @@ class ProductModel extends HTMLElement {
     if(!mediaID) return
 
     const productModalButton = this.querySelector(`button[id="productModalOpenButton_${mediaID}"]`)
+
+    
   }
 }
 
