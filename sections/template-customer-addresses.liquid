@@ -225,7 +225,8 @@
     
     initDeleteAddressButton(){
       const deleteButtons = document.querySelectorAll("button[data-delete-address]")
-      console.log(deleteButtons)
+      if(deleteButtons.length < 1) return
+      
     }
     initCustomerAddress() {
       const allAddressSelector = document.querySelectorAll("select[data-country-selector]")
