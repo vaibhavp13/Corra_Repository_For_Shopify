@@ -5,11 +5,11 @@ class ProductModel extends HTMLElement {
   }
 
   getMediaID(){
-
+    this.mediaID
   }
 
   getModal(){
-    
+
   }
 
   openModelModal() {
