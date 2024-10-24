@@ -27,7 +27,8 @@ class ProductModel extends HTMLElement {
       const template = document.querySelector(`product-model[data-media-id="${mediaID}"] > template`)
 
       const clone = template.content.cloneNode(true)
-      console.log(clone)
+      
+      modal
 
     })
 
