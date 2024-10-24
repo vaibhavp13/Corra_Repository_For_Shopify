@@ -180,10 +180,8 @@
           var provinces = this.options[this.selectedIndex].dataset.provinces
 
           var arrayOfProvince = JSON.parse(provinces)
-          console.log(arrayOfProvince)
           var provinceSelector = document.querySelector(`#address_province_${this.dataset.id}`)
 
-          console.log(this.dataset.id)
           if(arrayOfProvince.length < 1) {
             provinceSelector.setAttribute('disabled', 'disabled')
           } else {
